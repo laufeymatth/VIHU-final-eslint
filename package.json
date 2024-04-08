@@ -1,5 +1,5 @@
 {
-  "name": "vihu-final-eslint",
+  "name": "@laufeymatth/eslint-plugin-no-moment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^9.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@laufeymatth"
   }
 }

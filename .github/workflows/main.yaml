@@ -10,10 +10,12 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4.0.2
         with:
-          node-version: 20
+          node-version: 21
+          registry-url: https://npm.pkg.github.com/
+          scope: '@laufeymatth'
       - name: npm install
-        run: npm ci
-      - name: publish
+        run: npm i
+      - name: publish 
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        env: 
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
