@@ -1,5 +1,5 @@
 module.exports = {
     rules: {
-      'no-moment': require('./rules/no-moment')
+      'no-moment': require('./no-moment')
     }
   };
